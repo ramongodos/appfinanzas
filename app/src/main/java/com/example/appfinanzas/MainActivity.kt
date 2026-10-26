@@ -166,7 +166,7 @@ fun InicioView( modifier: Modifier, navController: NavHostController) {
             Text(text = "Créala ")
             Text(text = "AQUÍ",
                 style = TextStyle(
-                    color = Color(0xFF42ECB9)),
+                    color = turquesa_oscuro),
                 modifier = Modifier
                     .clickable{
                        navController.navigate("SignUpView")
@@ -214,7 +214,7 @@ fun BotonGenerico(texto: String){
             .height(52.dp),
         shape = RoundedCornerShape(8.dp),
         colors = ButtonDefaults.buttonColors(
-            containerColor = Color(0xFF01A593)
+            containerColor = turquesa_bonito
         )
     )
     {
@@ -222,7 +222,7 @@ fun BotonGenerico(texto: String){
             style = TextStyle(
                 fontSize = 16.sp,
                 fontWeight = FontWeight(600),
-                color = Color(0xFFFFFFFF)
+                color = casi_blanco
             ))
                 )
     }
@@ -287,7 +287,7 @@ fun DivisiveLine() {
         HorizontalDivider(
             modifier = Modifier.weight(1f),
             thickness = 1.dp,
-            color = Color(0xFF737D8C)
+            color = gris
         )
 
         Text(
@@ -295,13 +295,13 @@ fun DivisiveLine() {
             modifier = Modifier
                 .padding(horizontal = 8.dp)
                 .offset(y = (-11).dp),
-            color = Color(0xFF737D8C)
+            color = gris
         )
 
         HorizontalDivider(
             modifier = Modifier.weight(1f),
             thickness = 1.dp,
-            color = Color(0xFF737D8C)
+            color = gris
         )
     }
 }
@@ -327,7 +327,7 @@ fun CustomTextField(
                 placeholder = {
                     Text(
                         text = placeholder,
-                        color = Color.Gray,
+                        color = gris,
                     )
                 },
                 modifier = Modifier
@@ -335,8 +335,8 @@ fun CustomTextField(
                     .height(52.dp),
                 shape = RoundedCornerShape(6.dp),
                 colors = OutlinedTextFieldDefaults.colors(
-                    unfocusedBorderColor = Color(0xFF737D8C),
-                    focusedBorderColor = Color(0xFF737D8C),
+                    unfocusedBorderColor = gris,
+                    focusedBorderColor = gris,
                     unfocusedContainerColor = Color.White,
                     focusedContainerColor = Color.White
                 ),
@@ -350,7 +350,7 @@ fun CustomTextField(
                 text = label,
                 style = TextStyle(
                     fontSize = 12.sp,
-                    color = Color(0xFF737D8C),
+                    color = negro,
                     fontWeight = FontWeight.Medium
                 ),
                 modifier = Modifier

@@ -30,6 +30,7 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.example.appfinanzas.ui.theme.AppFinanzasTheme
 import com.example.appfinanzas.ui.theme.casi_blanco
+import com.example.appfinanzas.ui.theme.turquesa_oscuro
 
 class SignUpScreen: ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -144,7 +145,7 @@ class SignUpScreen: ComponentActivity() {
                     Text(
                         text = "AQUÍ",
                         style = TextStyle(
-                            color = Color(0xFF42ECB9)
+                            color = turquesa_oscuro
                         ),
                         modifier = Modifier
                             .clickable {
@@ -154,7 +155,6 @@ class SignUpScreen: ComponentActivity() {
                     )
                 }
             }
-
 
 
 
